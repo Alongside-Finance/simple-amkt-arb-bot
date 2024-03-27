@@ -49,7 +49,7 @@ COINGECKO_ETH_PRICE_ENDPOINT = (
 )
 CHECK_INTERVAL = 120  # Interval for checking arbitrage opportunities in seconds
 AMKT_AMOUNT = 5  # Amount of AMKT to trade
-
+SLIPPAGE_PERCENTAGE = "0.003"  # Slippage percentage for 0x trades
 
 ADDRESSES = {
     "WBTC": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
@@ -337,7 +337,7 @@ def start_trade(sell_token, buy_token, sell_amount, buy_amount):
         "sellAmount": sell_amount,
         "buyAmount": buy_amount,
         "takerAddress": ETH_ADDRESS,
-        "slippagePercentage": "0.003",
+        "slippagePercentage": SLIPPAGE_PERCENTAGE,
     }
     headers = {"0x-api-key": ZX_API_KEY}
     response = requests.get(ZEROX_QUOTE_ENDPOINT, params=params, headers=headers)
