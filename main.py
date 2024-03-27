@@ -48,7 +48,7 @@ COINGECKO_ETH_PRICE_ENDPOINT = (
     "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd"
 )
 CHECK_INTERVAL = 120  # Interval for checking arbitrage opportunities in seconds
-AMKT_AMOUNT = 5  # Amount of AMKT to trade
+AMKT_AMOUNT = 1  # Amount of AMKT to trade
 SLIPPAGE_PERCENTAGE = "0.003"  # Slippage percentage for 0x trades
 
 ADDRESSES = {
