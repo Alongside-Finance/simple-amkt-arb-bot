@@ -43,7 +43,6 @@ w3 = Web3(Web3.HTTPProvider(current_network_settings["HTTP_PROVIDER_URL"]))
 mainnet_w3 = Web3(Web3.HTTPProvider("https://rpc.ankr.com/eth"))
 
 # Other constants
-AMKT_NAV_ENDPOINT = "https://amkt.batterylabs.io/api/data/getAmktSummary"
 COINGECKO_ETH_PRICE_ENDPOINT = (
     "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd"
 )
